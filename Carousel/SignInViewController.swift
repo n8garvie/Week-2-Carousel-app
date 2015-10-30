@@ -10,13 +10,15 @@ import UIKit
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var fieldParentView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var signInButtonImage: UIImageView!
     @IBOutlet weak var signInButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        scrollView.contentSize = CGSize(width: 320, height: 600)
+        
         // Do any additional setup after loading the view.
     }
    

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8D3A3321BE3C0D10056CF27 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D3A3311BE3C0D10056CF27 /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C8EC2FCD1BE14065000357CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC2FCC1BE14065000357CB /* AppDelegate.swift */; };
 		C8EC2FCF1BE14065000357CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC2FCE1BE14065000357CB /* ViewController.swift */; };
 		C8EC2FD21BE14065000357CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8EC2FD01BE14065000357CB /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		C8EC2FED1BE14065000357CB /* CarouselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC2FEC1BE14065000357CB /* CarouselUITests.swift */; };
 		C8EC2FFB1BE1414E000357CB /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC2FFA1BE1414E000357CB /* Common.swift */; settings = {ASSET_TAGS = (); }; };
 		C8EC2FFD1BE1422A000357CB /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC2FFC1BE1422A000357CB /* IntroViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C8EC2FFF1BE148E0000357CB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC2FFE1BE148E0000357CB /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8D3A3311BE3C0D10056CF27 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C8EC2FC91BE14065000357CB /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8EC2FCC1BE14065000357CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8EC2FCE1BE14065000357CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		C8EC2FEE1BE14065000357CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8EC2FFA1BE1414E000357CB /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		C8EC2FFC1BE1422A000357CB /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
-		C8EC2FFE1BE148E0000357CB /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,6 @@
 				C8EC2FCB1BE14065000357CB /* Carousel */,
 				C8EC2FE01BE14065000357CB /* CarouselTests */,
 				C8EC2FEB1BE14065000357CB /* CarouselUITests */,
-				C8EC2FCA1BE14065000357CB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +97,7 @@
 				C8EC2FE81BE14065000357CB /* CarouselUITests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C8EC2FCB1BE14065000357CB /* Carousel */ = {
@@ -107,7 +107,8 @@
 				C8EC2FCE1BE14065000357CB /* ViewController.swift */,
 				C8EC2FD01BE14065000357CB /* Main.storyboard */,
 				C8EC2FFC1BE1422A000357CB /* IntroViewController.swift */,
-				C8EC2FFE1BE148E0000357CB /* SignInViewController.swift */,
+				C8EC2FCA1BE14065000357CB /* Products */,
+				C8D3A3311BE3C0D10056CF27 /* SignInViewController.swift */,
 				C8EC2FD31BE14065000357CB /* Assets.xcassets */,
 				C8EC2FFA1BE1414E000357CB /* Common.swift */,
 				C8EC2FD51BE14065000357CB /* LaunchScreen.storyboard */,
@@ -269,8 +270,8 @@
 			files = (
 				C8EC2FCF1BE14065000357CB /* ViewController.swift in Sources */,
 				C8EC2FFB1BE1414E000357CB /* Common.swift in Sources */,
+				C8D3A3321BE3C0D10056CF27 /* SignInViewController.swift in Sources */,
 				C8EC2FCD1BE14065000357CB /* AppDelegate.swift in Sources */,
-				C8EC2FFF1BE148E0000357CB /* SignInViewController.swift in Sources */,
 				C8EC2FFD1BE1422A000357CB /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +497,7 @@
 				C8EC2FF31BE14065000357CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8EC2FF41BE14065000357CB /* Build configuration list for PBXNativeTarget "CarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +506,7 @@
 				C8EC2FF61BE14065000357CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8EC2FF71BE14065000357CB /* Build configuration list for PBXNativeTarget "CarouselUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +515,7 @@
 				C8EC2FF91BE14065000357CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
