@@ -8,14 +8,38 @@
 
 import UIKit
 
-class TutorialViewController: UIViewController {
+class TutorialViewController: UIViewController, UIScrollViewDelegate {
+
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var backUpButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        scrollView.delegate = self
+        scrollView.contentSize = CGSize(width: 1280, height: 568)
+        backUpButton.alpha = 0
     }
 
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        // Get the current page based on the scroll offset
+        var page : Int = Int(round(scrollView.contentOffset.x / 320))
+        // Set the current page, so the dots will update
+        pageControl.currentPage = page
+        //turn on button at last page
+        if (pageControl.currentPage == 3){
+            pageControl.hidden = true
+            UIView.animateWithDuration(0.5, animations: { () -> Void in
+                self.backUpButton.alpha = 1
+            })
+            
+        }
+        
+    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
