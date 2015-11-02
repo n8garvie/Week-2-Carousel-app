@@ -213,14 +213,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="Kp6-sa-bM6">
-                                        <rect key="frame" x="0.0" y="-305" width="320" height="695"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="695"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IIc-6t-Q9l">
-                                        <rect key="frame" x="0.0" y="315" width="320" height="47"/>
+                                        <rect key="frame" x="0.0" y="620" width="320" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="XEa-x5-LDu"/>
+                                            <action selector="onTapSignOut:" destination="Hxx-KX-eMO" eventType="touchUpInside" id="w28-fy-V1Y"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -244,11 +244,12 @@
                         <outlet property="imageView" destination="Kp6-sa-bM6" id="F76-DN-sbE"/>
                         <outlet property="scrollView" destination="WTI-IP-3i7" id="qem-V0-nZM"/>
                         <outlet property="signOutButton" destination="IIc-6t-Q9l" id="zuB-nX-Nmr"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="signOutSegue" modalTransitionStyle="crossDissolve" id="3HY-On-RnZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tw5-Yw-WJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1960" y="1574"/>
+            <point key="canvasLocation" x="824" y="1098"/>
         </scene>
         <!--Conversations View Controller-->
         <scene sceneID="ovv-1q-bdt">
