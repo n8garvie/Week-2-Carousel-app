@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C84DD5631BE6FB9C00CF62D3 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84DD5621BE6FB9C00CF62D3 /* ConversationsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C84DD5651BE6FC3900CF62D3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84DD5641BE6FC3900CF62D3 /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C84DD5671BE7C3E900CF62D3 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84DD5661BE7C3E900CF62D3 /* CreateAccountViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C8D3A3321BE3C0D10056CF27 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D3A3311BE3C0D10056CF27 /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C8EC2FCD1BE14065000357CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC2FCC1BE14065000357CB /* AppDelegate.swift */; };
 		C8EC2FCF1BE14065000357CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC2FCE1BE14065000357CB /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		C84DD5621BE6FB9C00CF62D3 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		C84DD5641BE6FC3900CF62D3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C84DD5661BE7C3E900CF62D3 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		C8D3A3311BE3C0D10056CF27 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C8EC2FC91BE14065000357CB /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8EC2FCC1BE14065000357CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				C8EC2FCC1BE14065000357CB /* AppDelegate.swift */,
 				C8EC2FCE1BE14065000357CB /* ViewController.swift */,
 				C8EC2FD01BE14065000357CB /* Main.storyboard */,
+				C84DD5661BE7C3E900CF62D3 /* CreateAccountViewController.swift */,
 				C84DD5621BE6FB9C00CF62D3 /* ConversationsViewController.swift */,
 				C84DD5641BE6FC3900CF62D3 /* SettingsViewController.swift */,
 				C8EC61701BE43397004F807F /* TutorialViewController.swift */,
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C84DD5671BE7C3E900CF62D3 /* CreateAccountViewController.swift in Sources */,
 				C8EC2FCF1BE14065000357CB /* ViewController.swift in Sources */,
 				C8EC2FFB1BE1414E000357CB /* Common.swift in Sources */,
 				C8EC61731BE6F89D004F807F /* TimeLineViewController.swift in Sources */,
