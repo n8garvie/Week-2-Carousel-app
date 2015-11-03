@@ -18,6 +18,7 @@ class CreateAccountViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var termsCheckbox: CheckBox!
     
     
     override func viewDidLoad() {
@@ -78,11 +79,18 @@ class CreateAccountViewController: UIViewController, UIScrollViewDelegate {
             }
             // add the cancel action to the alertController
             alertController.addAction(cancelAction)
-            
-            presentViewController(alertController, animated: true) {
-                // optional code for what happens after the alert controller has finished presenting
-            }
+            presentViewController(alertController, animated: true) {}
         }
+        else if(termsCheckbox.isChecked == false) {
+            let alertController = UIAlertController(title: "Agree to our invasive terms!", message: "", preferredStyle: .Alert)
+            let cancelAction = UIAlertAction(title: "I've killed a puppy", style: .Cancel) { (action) in
+                // handle cancel response here. Doing nothing will dismiss the view.
+            }
+            // add the cancel action to the alertController
+            alertController.addAction(cancelAction)
+            presentViewController(alertController, animated: true) {}
+        }
+        
         else {
             self.performSegueWithIdentifier("createToTutorialSegue", sender: self)
         }
@@ -93,7 +101,6 @@ class CreateAccountViewController: UIViewController, UIScrollViewDelegate {
     @IBAction func onTapBackButton(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-
     
 
     override func didReceiveMemoryWarning() {

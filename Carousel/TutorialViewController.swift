@@ -13,6 +13,7 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var backUpButton: UIButton!
+    @IBOutlet weak var checkBox: CheckBox!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,7 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         scrollView.delegate = self
         scrollView.contentSize = CGSize(width: 1280, height: 568)
         backUpButton.alpha = 0
+        checkBox.alpha = 0
     }
 
     
@@ -33,6 +35,7 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
             pageControl.hidden = true
             UIView.animateWithDuration(0.5, animations: { () -> Void in
                 self.backUpButton.alpha = 1
+                self.checkBox.alpha = 1
             })
             
         }
