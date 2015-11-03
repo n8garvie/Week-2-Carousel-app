@@ -432,19 +432,22 @@
                                                 <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </activityIndicatorView>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="terms_text" id="Ny6-iH-IpM">
-                                                <rect key="frame" x="0.0" y="84" width="320" height="33"/>
+                                                <rect key="frame" x="48" y="83" width="225" height="33"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QUL-5J-Jn5">
-                                                <rect key="frame" x="24" y="90" width="20" height="22"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="check_box"/>
-                                                <state key="selected" image="check_box_selected"/>
-                                                <state key="highlighted" image="checkbox_unchecked"/>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G3b-WE-Oss">
-                                                <rect key="frame" x="102" y="84" width="50" height="33"/>
+                                                <rect key="frame" x="105" y="83" width="50" height="33"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="didTapTerms:" destination="Yse-Vq-0s8" eventType="touchUpInside" id="9pk-GE-jL3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YOz-rO-L2o" customClass="CheckBox" customModule="Carousel" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="90" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="check_box">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -481,12 +484,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MJ0-Nc-wq9">
-                                <rect key="frame" x="0.0" y="25" width="52" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YkG-3a-Mzs">
+                                <rect key="frame" x="0.0" y="26" width="44" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="didTapBackButton:" destination="Yse-Vq-0s8" eventType="touchUpInside" id="clM-Nw-rLP"/>
-                                    <action selector="onTapBack:" destination="Yse-Vq-0s8" eventType="touchUpInside" id="HhN-kS-DXa"/>
+                                    <action selector="onTapBackButton:" destination="Yse-Vq-0s8" eventType="touchUpInside" id="JCC-RW-6cY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -497,16 +499,14 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="MJ0-Nc-wq9" id="IN4-Pz-x7l"/>
                         <outlet property="buttonParentView" destination="aQu-Hy-4nf" id="0OE-dH-Rwq"/>
                         <outlet property="createAccountButton" destination="9F1-0M-t4Q" id="dVv-wA-idg"/>
                         <outlet property="fieldParentView" destination="dTV-2a-r5H" id="dag-eO-dGo"/>
                         <outlet property="loginIndicator" destination="xIy-sd-1ff" id="1PY-pP-qQ0"/>
                         <outlet property="passwordField" destination="vRW-GN-H5j" id="ffD-Xh-p0g"/>
                         <outlet property="scrollView" destination="PAP-Up-Gqr" id="NfV-2s-4QH"/>
-                        <outlet property="signInButton" destination="9F1-0M-t4Q" id="AWk-c7-TIO"/>
                         <outlet property="usernameField" destination="8oN-b8-7ls" id="Tr8-pI-sG2"/>
-                        <segue destination="Dx9-SR-hgp" kind="push" identifier="createToTutorialSegue" id="oTR-OP-24Q"/>
+                        <segue destination="Dx9-SR-hgp" kind="modal" identifier="createToTutorialSegue" id="oTR-OP-24Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1M-sX-oMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -518,12 +518,31 @@
             </objects>
             <point key="canvasLocation" x="162" y="1379"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="nD0-hQ-keA">
+            <objects>
+                <viewController id="XkX-Oh-qU3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ojx-Xm-xPJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="fUj-gf-4QN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTW-rw-li2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="2057"/>
+        </scene>
     </scenes>
     <resources>
         <image name="backup_button" width="320" height="97"/>
         <image name="check_box" width="20" height="20"/>
-        <image name="check_box_selected" width="20" height="20"/>
-        <image name="checkbox_unchecked" width="23" height="23"/>
         <image name="conversations" width="320" height="568"/>
         <image name="create_button" width="320" height="57"/>
         <image name="create_form" width="320" height="192"/>

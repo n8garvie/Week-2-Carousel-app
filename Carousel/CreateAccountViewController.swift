@@ -84,20 +84,16 @@ class CreateAccountViewController: UIViewController, UIScrollViewDelegate {
             }
         }
         else {
-            
-            
+            self.performSegueWithIdentifier("createToTutorialSegue", sender: self)
         }
         
     }
 
     
-    
-    
-    @IBAction func didTapBackButton(sender: AnyObject) {
+    @IBAction func onTapBackButton(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    
+
     
 
     override func didReceiveMemoryWarning() {
