@@ -530,7 +530,6 @@
         <!--Terms Web View Controller-->
         <scene sceneID="nD0-hQ-keA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fTW-rw-li2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="XkX-Oh-qU3" customClass="TermsWebViewController" customModule="Carousel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ojx-Xm-xPJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -559,6 +558,7 @@
                         <outlet property="webView" destination="fUj-gf-4QN" id="LBH-fO-QdP"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTW-rw-li2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="162" y="2057"/>
         </scene>
